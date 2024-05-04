@@ -18,7 +18,7 @@ struct DataClass: Decodable {
 
 struct Coin: Decodable {
     let symbol, name: String?
-    let iconURL: String?
+    let iconUrl: String?
     let marketCap, price: String?
     let change: String?
     let rank: Int?
@@ -29,7 +29,7 @@ struct Coin: Decodable {
 
     enum CodingKeys: String, CodingKey {
         case symbol, name
-        case iconURL
+        case iconUrl
         case marketCap, price, change, rank, sparkline, lowVolume
         case coinrankingURL
         case the24HVolume
@@ -46,4 +46,3 @@ struct Stats: Decodable {
         case total24HVolume
     }
 }
-

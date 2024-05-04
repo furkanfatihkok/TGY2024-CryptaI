@@ -98,8 +98,8 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rys-gj-Qvf">
-                                <rect key="frame" x="16.000000000000007" y="131" width="122.66666666666669" height="20.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Market Cap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rys-gj-Qvf">
+                                <rect key="frame" x="16" y="131" width="129.33333333333334" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -111,10 +111,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj0-Rl-b1s">
-                                <rect key="frame" x="151.33333333333334" y="163" width="50.666666666666657" height="28.333333333333343"/>
+                                <rect key="frame" x="151.33333333333334" y="163" width="37.333333333333343" height="28.333333333333343"/>
                                 <color key="backgroundColor" name="purplee"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="USD ">
+                                <buttonConfiguration key="configuration" style="plain" title="TL">
                                     <fontDescription key="titleFontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -130,6 +130,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aI-83-CqA">
                                                 <rect key="frame" x="8" y="16" width="87.333333333333329" height="45"/>
+                                                <color key="backgroundColor" name="purplee"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="All assets">
                                                     <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
@@ -145,7 +146,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48w-ss-Rfa">
-                                                <rect key="frame" x="169.33333333333334" y="16" width="98.000000000000028" height="45"/>
+                                                <rect key="frame" x="177.33333333333334" y="16" width="98.000000000000028" height="45"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Top Traded">
                                                     <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
@@ -153,7 +154,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3F2-w5-bFk">
-                                                <rect key="frame" x="275.33333333333331" y="16" width="99.333333333333314" height="45"/>
+                                                <rect key="frame" x="291.33333333333331" y="16" width="99.333333333333314" height="45"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Top Gained">
                                                     <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
@@ -168,13 +169,13 @@
                                             <constraint firstAttribute="bottom" secondItem="1aI-83-CqA" secondAttribute="bottom" constant="16" id="6YC-91-vo6"/>
                                             <constraint firstItem="48w-ss-Rfa" firstAttribute="top" secondItem="3yv-0g-5SN" secondAttribute="top" constant="16" id="LKu-Zp-pY4"/>
                                             <constraint firstAttribute="height" constant="77" id="Our-IJ-vsi"/>
-                                            <constraint firstItem="48w-ss-Rfa" firstAttribute="leading" secondItem="7sB-0k-Ajc" secondAttribute="trailing" constant="8" id="Ud1-PO-GCp"/>
+                                            <constraint firstItem="48w-ss-Rfa" firstAttribute="leading" secondItem="7sB-0k-Ajc" secondAttribute="trailing" constant="16" id="Ud1-PO-GCp"/>
                                             <constraint firstItem="3F2-w5-bFk" firstAttribute="top" secondItem="3yv-0g-5SN" secondAttribute="top" constant="16" id="hyU-AR-QrY"/>
                                             <constraint firstItem="1aI-83-CqA" firstAttribute="top" secondItem="3yv-0g-5SN" secondAttribute="top" constant="16" id="kzG-J1-L2g"/>
                                             <constraint firstItem="7sB-0k-Ajc" firstAttribute="leading" secondItem="1aI-83-CqA" secondAttribute="trailing" constant="16" id="m9Z-NY-meq"/>
                                             <constraint firstAttribute="bottom" secondItem="7sB-0k-Ajc" secondAttribute="bottom" constant="16" id="nxY-cY-ufr"/>
                                             <constraint firstAttribute="bottom" secondItem="3F2-w5-bFk" secondAttribute="bottom" constant="16" id="p1b-2q-fn0"/>
-                                            <constraint firstItem="3F2-w5-bFk" firstAttribute="leading" secondItem="48w-ss-Rfa" secondAttribute="trailing" constant="8" id="sqt-UC-Phb"/>
+                                            <constraint firstItem="3F2-w5-bFk" firstAttribute="leading" secondItem="48w-ss-Rfa" secondAttribute="trailing" constant="16" id="sqt-UC-Phb"/>
                                             <constraint firstItem="1aI-83-CqA" firstAttribute="leading" secondItem="3yv-0g-5SN" secondAttribute="leading" constant="8" id="tRu-0Z-kNr"/>
                                             <constraint firstItem="7sB-0k-Ajc" firstAttribute="top" secondItem="3yv-0g-5SN" secondAttribute="top" constant="16" id="xq1-OO-H3e"/>
                                         </constraints>
@@ -234,7 +235,12 @@
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="assetsLabel" destination="1aI-83-CqA" id="4dR-nk-z03"/>
                         <outlet property="collectionView" destination="dKX-9z-RkV" id="Voi-I8-blb"/>
+                        <outlet property="gainedLabel" destination="3F2-w5-bFk" id="x5R-SA-UBJ"/>
+                        <outlet property="hoursLabel" destination="7sB-0k-Ajc" id="FlG-cG-gux"/>
+                        <outlet property="marketCapLabel" destination="KOh-Hf-lFW" id="Bee-2J-NxB"/>
+                        <outlet property="tradedLabel" destination="48w-ss-Rfa" id="Cip-vP-FQC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -302,13 +308,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CryptaI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnQ-q5-qWh">
-                                <rect key="frame" x="61.999999999999986" y="315" width="156.66666666666663" height="55.333333333333314"/>
+                                <rect key="frame" x="61.999999999999986" y="395" width="156.66666666666663" height="55.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="46"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra And Electic" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewD-r8-Yi8">
-                                <rect key="frame" x="68.000000000000014" y="378.33333333333331" width="201.33333333333337" height="32.333333333333314"/>
+                                <rect key="frame" x="68.000000000000014" y="458.33333333333331" width="201.33333333333337" height="32.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="27"/>
                                 <color key="textColor" systemColor="systemGray4Color"/>
                                 <nil key="highlightedColor"/>
@@ -324,7 +330,7 @@
                             <constraint firstItem="inq-wO-6k5" firstAttribute="top" secondItem="Hbo-Ii-cCt" secondAttribute="topMargin" constant="-7.1054273576010019e-15" id="QQI-Q6-VUG"/>
                             <constraint firstItem="ewD-r8-Yi8" firstAttribute="top" secondItem="NnQ-q5-qWh" secondAttribute="bottom" constant="8" id="RJ5-a2-D4w"/>
                             <constraint firstItem="KWD-ck-Nph" firstAttribute="top" secondItem="YxU-3B-Zzx" secondAttribute="top" constant="25" id="Rzt-0q-7T7"/>
-                            <constraint firstItem="NnQ-q5-qWh" firstAttribute="top" secondItem="GR5-am-KH4" secondAttribute="bottom" constant="200" id="VBa-Re-1XF"/>
+                            <constraint firstItem="NnQ-q5-qWh" firstAttribute="top" secondItem="GR5-am-KH4" secondAttribute="bottom" constant="280" id="VBa-Re-1XF"/>
                             <constraint firstItem="YxU-3B-Zzx" firstAttribute="bottom" secondItem="2WJ-YT-qbY" secondAttribute="bottom" constant="58" id="aMQ-8d-JbP"/>
                             <constraint firstItem="YxU-3B-Zzx" firstAttribute="trailing" secondItem="KWD-ck-Nph" secondAttribute="trailing" constant="16" id="ba2-D9-hGJ"/>
                             <constraint firstItem="ewD-r8-Yi8" firstAttribute="leading" secondItem="YxU-3B-Zzx" secondAttribute="leading" constant="68" id="eOb-I6-010"/>
@@ -400,7 +406,7 @@
             <color red="0.39599999785423279" green="0.44299998879432678" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

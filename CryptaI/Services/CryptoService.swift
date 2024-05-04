@@ -1,5 +1,5 @@
 //
-//  CryptoService.swift
+// CryptoService.swift
 //  CryptaI
 //
 //  Created by FFK on 4.05.2024.
