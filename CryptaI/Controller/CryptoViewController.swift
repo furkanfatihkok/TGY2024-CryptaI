@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CyrptoViewController: UIViewController {
+class CryptoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
