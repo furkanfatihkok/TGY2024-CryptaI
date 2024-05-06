@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0224EA9E2BE83D6200E1864E /* CustomCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224EA9D2BE83D6200E1864E /* CustomCardCell.swift */; };
+		0224EAA02BE83D6F00E1864E /* CustomCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0224EA9F2BE83D6F00E1864E /* CustomCardCell.xib */; };
 		023418832BE6F10600DE1EBE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 023418822BE6F10600DE1EBE /* SDWebImage */; };
 		023418852BE6F10600DE1EBE /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 023418842BE6F10600DE1EBE /* SDWebImageMapKit */; };
 		023A1F202BE2C8A700B0FF29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A1F1F2BE2C8A700B0FF29 /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 		02488C7B2BE6EE5E00A7D967 /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02488C7A2BE6EE5E00A7D967 /* CryptoCell.swift */; };
 		0254F25F2BE584C7009E8133 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254F25E2BE584C7009E8133 /* UIColor.swift */; };
 		0254F2612BE585E3009E8133 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254F2602BE585E3009E8133 /* UIFont.swift */; };
+		025575492BE8560C002000D4 /* CardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025575472BE8560C002000D4 /* CardCollectionCell.swift */; };
+		0255754A2BE8560C002000D4 /* CardCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025575482BE8560C002000D4 /* CardCollectionCell.xib */; };
 		025E53892BE5B26F00DF3E7C /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E53882BE5B26F00DF3E7C /* CryptoModel.swift */; };
 		025E538B2BE5B43F00DF3E7C /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E538A2BE5B43F00DF3E7C /* CryptoService.swift */; };
 		025E538D2BE5B5F600DF3E7C /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E538C2BE5B5F600DF3E7C /* CryptoViewModel.swift */; };
@@ -30,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0224EA9D2BE83D6200E1864E /* CustomCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardCell.swift; sourceTree = "<group>"; };
+		0224EA9F2BE83D6F00E1864E /* CustomCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCardCell.xib; sourceTree = "<group>"; };
 		023A1F1C2BE2C8A700B0FF29 /* CryptaI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptaI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023A1F1F2BE2C8A700B0FF29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		023A1F212BE2C8A700B0FF29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		0254F25B2BE58215009E8133 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
 		0254F25E2BE584C7009E8133 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		0254F2602BE585E3009E8133 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		025575472BE8560C002000D4 /* CardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionCell.swift; sourceTree = "<group>"; };
+		025575482BE8560C002000D4 /* CardCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionCell.xib; sourceTree = "<group>"; };
 		025E53882BE5B26F00DF3E7C /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		025E538A2BE5B43F00DF3E7C /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
 		025E538C2BE5B5F600DF3E7C /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
@@ -70,6 +78,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0224EA9A2BE83D1800E1864E /* CryptoCell */ = {
+			isa = PBXGroup;
+			children = (
+				02488C7A2BE6EE5E00A7D967 /* CryptoCell.swift */,
+				02488C742BE6EE4400A7D967 /* CryptoCell.xib */,
+			);
+			path = CryptoCell;
+			sourceTree = "<group>";
+		};
+		0224EA9C2BE83D4600E1864E /* CustomCardCell */ = {
+			isa = PBXGroup;
+			children = (
+				0224EA9D2BE83D6200E1864E /* CustomCardCell.swift */,
+				0224EA9F2BE83D6F00E1864E /* CustomCardCell.xib */,
+			);
+			path = CustomCardCell;
+			sourceTree = "<group>";
+		};
 		023A1F132BE2C8A700B0FF29 = {
 			isa = PBXGroup;
 			children = (
@@ -125,8 +151,9 @@
 		023A1F352BE2C8D600B0FF29 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				02488C7A2BE6EE5E00A7D967 /* CryptoCell.swift */,
-				02488C742BE6EE4400A7D967 /* CryptoCell.xib */,
+				0224EA9A2BE83D1800E1864E /* CryptoCell */,
+				0224EA9C2BE83D4600E1864E /* CustomCardCell */,
+				025575462BE855E2002000D4 /* CardCollectionCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +188,15 @@
 				025F93C62BE44C1500068460 /* OnboardingViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		025575462BE855E2002000D4 /* CardCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				025575472BE8560C002000D4 /* CardCollectionCell.swift */,
+				025575482BE8560C002000D4 /* CardCollectionCell.xib */,
+			);
+			path = CardCollectionCell;
 			sourceTree = "<group>";
 		};
 		025E53852BE59A0300DF3E7C /* ViewModel */ = {
@@ -255,6 +291,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0224EAA02BE83D6F00E1864E /* CustomCardCell.xib in Resources */,
+				0255754A2BE8560C002000D4 /* CardCollectionCell.xib in Resources */,
 				02488C752BE6EE4400A7D967 /* CryptoCell.xib in Resources */,
 				023A1F2C2BE2C8A800B0FF29 /* LaunchScreen.storyboard in Resources */,
 				023A1F292BE2C8A800B0FF29 /* Assets.xcassets in Resources */,
@@ -272,11 +310,13 @@
 				023A1F242BE2C8A700B0FF29 /* HomeViewController.swift in Sources */,
 				0254F25F2BE584C7009E8133 /* UIColor.swift in Sources */,
 				025E53892BE5B26F00DF3E7C /* CryptoModel.swift in Sources */,
+				0224EA9E2BE83D6200E1864E /* CustomCardCell.swift in Sources */,
 				025E538D2BE5B5F600DF3E7C /* CryptoViewModel.swift in Sources */,
 				025F93C52BE445ED00068460 /* CryptoViewController.swift in Sources */,
 				0254F2612BE585E3009E8133 /* UIFont.swift in Sources */,
 				025F93C72BE44C1500068460 /* OnboardingViewController.swift in Sources */,
 				023A1F202BE2C8A700B0FF29 /* AppDelegate.swift in Sources */,
+				025575492BE8560C002000D4 /* CardCollectionCell.swift in Sources */,
 				02488C7B2BE6EE5E00A7D967 /* CryptoCell.swift in Sources */,
 				025E538B2BE5B43F00DF3E7C /* CryptoService.swift in Sources */,
 				02F981D12BE6B79600862B9B /* Double.swift in Sources */,

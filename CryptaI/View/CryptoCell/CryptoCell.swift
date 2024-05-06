@@ -10,7 +10,7 @@ import SDWebImage
 
 class CryptoCell: UICollectionViewCell {
     
-    static let identifier = "cryptoCell"
+    static let identifier = "CyptoCell"
     
     @IBOutlet weak var coinImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
