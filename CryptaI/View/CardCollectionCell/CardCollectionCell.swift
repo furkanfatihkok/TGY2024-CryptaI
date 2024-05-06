@@ -11,18 +11,27 @@ class CardCollectionCell: UICollectionViewCell {
     
     static let identifier = "CardCollectionCell"
     
+    @IBOutlet weak var containerView: UIView!
+    
     @IBOutlet weak var cryptoNamelLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var percentageLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     func configure(with coin: Coin) {
+        containerView.backgroundColor = UIColor.containerBackground
+        containerView.layer.borderColor = UIColor.primaryPurple.cgColor
+        containerView.layer.borderWidth = 0.3
+        containerView.layer.cornerRadius = 4
+        
         cryptoNamelLabel.text = coin.name
-        titleLabel.text = coin.name
+        descLabel.text = "\(coin.symbol ?? "") / TL"
+        titleLabel.text = coin.symbol
         
         if let price = Double(coin.price!), let formattedPrice = price.formattedPrice() {
             priceLabel.text = formattedPrice

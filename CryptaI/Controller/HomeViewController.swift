@@ -29,6 +29,16 @@ class HomeViewController: UIViewController {
         setLayerStyles()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "homeToDetail" {
+            if let detailVC = segue.destination as? DetailViewController,
+               let indexPath = collectionView.indexPathsForSelectedItems?.first,
+               let selectedCoin = viewModel.cryptoData?.data?.coins?[indexPath.item] {
+                detailVC.selectedCoin = selectedCoin
+            }
+        }
+    }
+    
     private func setupUI() {
         setupTabBarAppearance()
     }
@@ -54,7 +64,7 @@ class HomeViewController: UIViewController {
     }
     
     private func setupCollectionView() {
-        collectionView.register(UINib(nibName: "CryptoCell", bundle: nil), forCellWithReuseIdentifier: CryptoCell.identifier)
+        collectionView.register(UINib(nibName: CryptoCell.identifier, bundle: nil), forCellWithReuseIdentifier: CryptoCell.identifier)
     }
     
     private func fetchDataAndUpdateUI() {
@@ -114,11 +124,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     
-    //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    //        <#code#>
-    //    }
-    //
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "homeToDetail", sender: viewModel.cryptoData?.data?.coins?[indexPath.item])
+        
+    }
     
 }
 

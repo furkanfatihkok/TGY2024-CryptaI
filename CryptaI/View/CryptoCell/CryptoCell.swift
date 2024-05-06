@@ -10,15 +10,13 @@ import SDWebImage
 
 class CryptoCell: UICollectionViewCell {
     
-    static let identifier = "CyptoCell"
+    static let identifier = "CryptoCell"
     
     @IBOutlet weak var coinImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var percentageLabel: UILabel!
-    
-    @IBOutlet weak var seperator: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,6 +34,7 @@ class CryptoCell: UICollectionViewCell {
         } else {
             priceLabel.text = coin.price
         }
+        
         if let changePercentage = Double(coin.change!), let formattedChange = changePercentage.formattedPercentage() {
             percentageLabel.text = formattedChange
             if changePercentage < 0 {

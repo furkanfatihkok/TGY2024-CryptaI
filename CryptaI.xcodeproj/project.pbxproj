@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0224EA9E2BE83D6200E1864E /* CustomCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224EA9D2BE83D6200E1864E /* CustomCardCell.swift */; };
-		0224EAA02BE83D6F00E1864E /* CustomCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0224EA9F2BE83D6F00E1864E /* CustomCardCell.xib */; };
 		023418832BE6F10600DE1EBE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 023418822BE6F10600DE1EBE /* SDWebImage */; };
 		023418852BE6F10600DE1EBE /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 023418842BE6F10600DE1EBE /* SDWebImageMapKit */; };
 		023A1F202BE2C8A700B0FF29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A1F1F2BE2C8A700B0FF29 /* AppDelegate.swift */; };
@@ -28,14 +27,15 @@
 		025E53892BE5B26F00DF3E7C /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E53882BE5B26F00DF3E7C /* CryptoModel.swift */; };
 		025E538B2BE5B43F00DF3E7C /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E538A2BE5B43F00DF3E7C /* CryptoService.swift */; };
 		025E538D2BE5B5F600DF3E7C /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E538C2BE5B5F600DF3E7C /* CryptoViewModel.swift */; };
-		025F93C52BE445ED00068460 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F93C42BE445ED00068460 /* CryptoViewController.swift */; };
+		025F93C52BE445ED00068460 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F93C42BE445ED00068460 /* DetailViewController.swift */; };
 		025F93C72BE44C1500068460 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F93C62BE44C1500068460 /* OnboardingViewController.swift */; };
+		0294CF512BE915C0002528C2 /* CustomCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0294CF502BE915C0002528C2 /* CustomCardCell.xib */; };
+		02EE6B632BE992BB008A4971 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE6B622BE992BB008A4971 /* MockData.swift */; };
 		02F981D12BE6B79600862B9B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F981D02BE6B79600862B9B /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0224EA9D2BE83D6200E1864E /* CustomCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardCell.swift; sourceTree = "<group>"; };
-		0224EA9F2BE83D6F00E1864E /* CustomCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCardCell.xib; sourceTree = "<group>"; };
 		023A1F1C2BE2C8A700B0FF29 /* CryptaI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptaI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023A1F1F2BE2C8A700B0FF29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		023A1F212BE2C8A700B0FF29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +58,10 @@
 		025E53882BE5B26F00DF3E7C /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		025E538A2BE5B43F00DF3E7C /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
 		025E538C2BE5B5F600DF3E7C /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
-		025F93C42BE445ED00068460 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		025F93C42BE445ED00068460 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		025F93C62BE44C1500068460 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		0294CF502BE915C0002528C2 /* CustomCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCardCell.xib; sourceTree = "<group>"; };
+		02EE6B622BE992BB008A4971 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		02F981D02BE6B79600862B9B /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0224EA9D2BE83D6200E1864E /* CustomCardCell.swift */,
-				0224EA9F2BE83D6F00E1864E /* CustomCardCell.xib */,
+				0294CF502BE915C0002528C2 /* CustomCardCell.xib */,
 			);
 			path = CustomCardCell;
 			sourceTree = "<group>";
@@ -176,6 +178,7 @@
 				0254F25E2BE584C7009E8133 /* UIColor.swift */,
 				0254F2602BE585E3009E8133 /* UIFont.swift */,
 				02F981D02BE6B79600862B9B /* Double.swift */,
+				02EE6B622BE992BB008A4971 /* MockData.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -183,7 +186,7 @@
 		0254F2672BE58ACA009E8133 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				025F93C42BE445ED00068460 /* CryptoViewController.swift */,
+				025F93C42BE445ED00068460 /* DetailViewController.swift */,
 				023A1F232BE2C8A700B0FF29 /* HomeViewController.swift */,
 				025F93C62BE44C1500068460 /* OnboardingViewController.swift */,
 			);
@@ -291,11 +294,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0224EAA02BE83D6F00E1864E /* CustomCardCell.xib in Resources */,
 				0255754A2BE8560C002000D4 /* CardCollectionCell.xib in Resources */,
 				02488C752BE6EE4400A7D967 /* CryptoCell.xib in Resources */,
 				023A1F2C2BE2C8A800B0FF29 /* LaunchScreen.storyboard in Resources */,
 				023A1F292BE2C8A800B0FF29 /* Assets.xcassets in Resources */,
+				0294CF512BE915C0002528C2 /* CustomCardCell.xib in Resources */,
 				023A1F272BE2C8A700B0FF29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,10 +312,11 @@
 			files = (
 				023A1F242BE2C8A700B0FF29 /* HomeViewController.swift in Sources */,
 				0254F25F2BE584C7009E8133 /* UIColor.swift in Sources */,
+				02EE6B632BE992BB008A4971 /* MockData.swift in Sources */,
 				025E53892BE5B26F00DF3E7C /* CryptoModel.swift in Sources */,
 				0224EA9E2BE83D6200E1864E /* CustomCardCell.swift in Sources */,
 				025E538D2BE5B5F600DF3E7C /* CryptoViewModel.swift in Sources */,
-				025F93C52BE445ED00068460 /* CryptoViewController.swift in Sources */,
+				025F93C52BE445ED00068460 /* DetailViewController.swift in Sources */,
 				0254F2612BE585E3009E8133 /* UIFont.swift in Sources */,
 				025F93C72BE44C1500068460 /* OnboardingViewController.swift in Sources */,
 				023A1F202BE2C8A700B0FF29 /* AppDelegate.swift in Sources */,
