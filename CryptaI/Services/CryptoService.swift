@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-final class CryptoService {
+class CryptoService {
     
     static let shared = CryptoService()
     

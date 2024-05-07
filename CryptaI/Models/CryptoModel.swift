@@ -8,12 +8,12 @@
 import Foundation
 
 struct CryptoModel: Decodable {
-    let data: DataClass?
+    var data: DataClass?
 }
 
 struct DataClass: Decodable {
     let stats: Stats?
-    let coins: [Coin]?
+    var coins: [Coin]?
 }
 
 struct Coin: Decodable {
@@ -32,7 +32,7 @@ struct Coin: Decodable {
         case iconUrl
         case marketCap, price, change, rank, sparkline, lowVolume
         case coinrankingURL
-        case the24HVolume
+        case the24HVolume = "24hVolume"
         case btcPrice
     }
 }
@@ -43,6 +43,6 @@ struct Stats: Decodable {
 
     enum CodingKeys: String, CodingKey {
         case total, totalCoins, totalMarkets, totalExchanges, totalMarketCap
-        case total24HVolume
+        case total24HVolume = "total24hVolume"
     }
 }

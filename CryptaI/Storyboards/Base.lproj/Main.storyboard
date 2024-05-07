@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32v-b5-pso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="-701"/>
+            <point key="canvasLocation" x="135.1145038167939" y="-701.4084507042254"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3eb-8j-zfz">
@@ -81,37 +81,49 @@
                                         <rect key="frame" x="0.0" y="0.0" width="466" height="77"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aI-83-CqA">
-                                                <rect key="frame" x="8" y="16" width="87.333333333333329" height="45"/>
+                                                <rect key="frame" x="8" y="16" width="59" height="45"/>
                                                 <color key="backgroundColor" name="purplee"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="All assets">
+                                                <buttonConfiguration key="configuration" style="plain" title="Price">
                                                     <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="priceButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iCe-Bn-lfn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sB-0k-Ajc">
-                                                <rect key="frame" x="111.33333333333331" y="16" width="50" height="45"/>
+                                                <rect key="frame" x="99" y="16" width="104.33333333333331" height="45"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="24h">
+                                                <buttonConfiguration key="configuration" style="plain" title="24h Volume">
                                                     <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="timeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8kX-sD-ja7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48w-ss-Rfa">
-                                                <rect key="frame" x="177.33333333333334" y="16" width="98.000000000000028" height="45"/>
+                                                <rect key="frame" x="235.33333333333337" y="16" width="103" height="45"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Top Traded">
+                                                <buttonConfiguration key="configuration" style="plain" title="Market Cap">
                                                     <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="marketCapButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eby-h9-e4F"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3F2-w5-bFk">
-                                                <rect key="frame" x="291.33333333333331" y="16" width="99.333333333333314" height="45"/>
+                                                <rect key="frame" x="370.33333333333331" y="16" width="75" height="45"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Top Gained">
+                                                <buttonConfiguration key="configuration" style="plain" title="Change">
                                                     <fontDescription key="titleFontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="changeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUq-ag-3h1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -121,13 +133,13 @@
                                             <constraint firstAttribute="bottom" secondItem="1aI-83-CqA" secondAttribute="bottom" constant="16" id="6YC-91-vo6"/>
                                             <constraint firstItem="48w-ss-Rfa" firstAttribute="top" secondItem="3yv-0g-5SN" secondAttribute="top" constant="16" id="LKu-Zp-pY4"/>
                                             <constraint firstAttribute="height" constant="77" id="Our-IJ-vsi"/>
-                                            <constraint firstItem="48w-ss-Rfa" firstAttribute="leading" secondItem="7sB-0k-Ajc" secondAttribute="trailing" constant="16" id="Ud1-PO-GCp"/>
+                                            <constraint firstItem="48w-ss-Rfa" firstAttribute="leading" secondItem="7sB-0k-Ajc" secondAttribute="trailing" constant="32" id="Ud1-PO-GCp"/>
                                             <constraint firstItem="3F2-w5-bFk" firstAttribute="top" secondItem="3yv-0g-5SN" secondAttribute="top" constant="16" id="hyU-AR-QrY"/>
                                             <constraint firstItem="1aI-83-CqA" firstAttribute="top" secondItem="3yv-0g-5SN" secondAttribute="top" constant="16" id="kzG-J1-L2g"/>
-                                            <constraint firstItem="7sB-0k-Ajc" firstAttribute="leading" secondItem="1aI-83-CqA" secondAttribute="trailing" constant="16" id="m9Z-NY-meq"/>
+                                            <constraint firstItem="7sB-0k-Ajc" firstAttribute="leading" secondItem="1aI-83-CqA" secondAttribute="trailing" constant="32" id="m9Z-NY-meq"/>
                                             <constraint firstAttribute="bottom" secondItem="7sB-0k-Ajc" secondAttribute="bottom" constant="16" id="nxY-cY-ufr"/>
                                             <constraint firstAttribute="bottom" secondItem="3F2-w5-bFk" secondAttribute="bottom" constant="16" id="p1b-2q-fn0"/>
-                                            <constraint firstItem="3F2-w5-bFk" firstAttribute="leading" secondItem="48w-ss-Rfa" secondAttribute="trailing" constant="16" id="sqt-UC-Phb"/>
+                                            <constraint firstItem="3F2-w5-bFk" firstAttribute="leading" secondItem="48w-ss-Rfa" secondAttribute="trailing" constant="32" id="sqt-UC-Phb"/>
                                             <constraint firstItem="1aI-83-CqA" firstAttribute="leading" secondItem="3yv-0g-5SN" secondAttribute="leading" constant="8" id="tRu-0Z-kNr"/>
                                             <constraint firstItem="7sB-0k-Ajc" firstAttribute="top" secondItem="3yv-0g-5SN" secondAttribute="top" constant="16" id="xq1-OO-H3e"/>
                                         </constraints>
@@ -236,12 +248,14 @@
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="assetsLabel" destination="1aI-83-CqA" id="4dR-nk-z03"/>
+                        <outlet property="changeButton" destination="3F2-w5-bFk" id="vDQ-dr-9RT"/>
                         <outlet property="collectionView" destination="dKX-9z-RkV" id="Voi-I8-blb"/>
-                        <outlet property="gainedLabel" destination="3F2-w5-bFk" id="x5R-SA-UBJ"/>
-                        <outlet property="hoursLabel" destination="7sB-0k-Ajc" id="FlG-cG-gux"/>
-                        <outlet property="marketCapLabel" destination="KOh-Hf-lFW" id="Bee-2J-NxB"/>
-                        <outlet property="tradedLabel" destination="48w-ss-Rfa" id="Cip-vP-FQC"/>
+                        <outlet property="infoPriceButton" destination="Pj0-Rl-b1s" id="KMa-ah-Abg"/>
+                        <outlet property="marketCapButton" destination="48w-ss-Rfa" id="Zr5-Ty-qJP"/>
+                        <outlet property="priceButton" destination="1aI-83-CqA" id="kvu-he-fT5"/>
+                        <outlet property="statsLabel" destination="KOh-Hf-lFW" id="lWG-u2-K6N"/>
+                        <outlet property="totalInfoLabel" destination="Rys-gj-Qvf" id="oF5-3m-oyS"/>
+                        <outlet property="volumeButton" destination="7sB-0k-Ajc" id="BNf-dh-6Ea"/>
                         <segue destination="6SF-v6-ELM" kind="presentation" identifier="homeToDetail" modalPresentationStyle="fullScreen" id="mhh-im-02o"/>
                     </connections>
                 </viewController>
@@ -368,6 +382,7 @@
                     <connections>
                         <outlet property="collectionView" destination="dj2-yY-6fK" id="5DM-sb-dMh"/>
                         <outlet property="customView" destination="NSd-CA-rJ5" id="ETY-px-b7q"/>
+                        <outlet property="lineChartView" destination="mwr-gh-D9x" id="kiI-Bg-nQ0"/>
                         <outlet property="textField" destination="HgM-1L-UVX" id="Y7B-c7-ciN"/>
                     </connections>
                 </viewController>
@@ -505,9 +520,9 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="4k-beautiful-colorful-abstract-wallpaper-photo" width="711" height="400"/>
-        <image name="arrow.left.arrow.right" catalog="system" width="120" height="128"/>
+        <image name="arrow.left.arrow.right" catalog="system" width="32" height="32"/>
         <image name="chart.line.uptrend.xyaxis.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="chart.pie.fill" catalog="system" width="128" height="123"/>
+        <image name="chart.pie.fill" catalog="system" width="32" height="32"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>

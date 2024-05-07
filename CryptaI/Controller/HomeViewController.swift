@@ -11,18 +11,24 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    @IBOutlet weak var marketCapLabel: UILabel!
+    @IBOutlet weak var totalInfoLabel: UILabel!
+    @IBOutlet weak var statsLabel: UILabel!
+    @IBOutlet weak var infoPriceButton: UIButton!
     
-    @IBOutlet weak var assetsLabel: UIButton!
-    @IBOutlet weak var hoursLabel: UIButton!
-    @IBOutlet weak var tradedLabel: UIButton!
-    @IBOutlet weak var gainedLabel: UIButton!
-    
+    @IBOutlet weak var priceButton: UIButton!
+    @IBOutlet weak var volumeButton: UIButton!
+    @IBOutlet weak var marketCapButton: UIButton!
+    @IBOutlet weak var changeButton: UIButton!
     
     let viewModel = CryptoViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        totalInfoLabel.text = ""
+        statsLabel.text = ""
+        infoPriceButton.isHidden = true
+        
         setupUI()
         setupCollectionView()
         fetchDataAndUpdateUI()
@@ -37,6 +43,18 @@ class HomeViewController: UIViewController {
                 detailVC.selectedCoin = selectedCoin
             }
         }
+    }
+    
+    private func fetchDataAndUpdateUI() {
+        viewModel.onDataUpdadate = { [weak self] in
+            self?.collectionView.reloadData()
+            self?.mainCoinsInfo()
+        }
+        viewModel.fetchData()
+    }
+    
+    private func setupCollectionView() {
+        collectionView.register(UINib(nibName: CryptoCell.identifier, bundle: nil), forCellWithReuseIdentifier: CryptoCell.identifier)
     }
     
     private func setupUI() {
@@ -63,43 +81,124 @@ class HomeViewController: UIViewController {
         
     }
     
-    private func setupCollectionView() {
-        collectionView.register(UINib(nibName: CryptoCell.identifier, bundle: nil), forCellWithReuseIdentifier: CryptoCell.identifier)
+    private func mainCoinsInfo() {
+        let totalCoins = viewModel.cryptoData?.data?.stats?.totalCoins ?? 0
+        
+        totalInfoLabel.text = "Total Coins"
+        statsLabel.text = String(format: "%.3f", Double(totalCoins) / 1000)
     }
     
-    private func fetchDataAndUpdateUI() {
-        viewModel.onDataUpdadate = { [weak self] in
-            self?.collectionView.reloadData()
-            self?.updateMarketCapLabel()
+    private func updatePriceLabel() {
+        let totalMarket = viewModel.cryptoData?.data?.stats?.totalMarkets ?? 0
+        
+        totalInfoLabel.text = "Total Markets"
+        statsLabel.text = String(format: "%.3f", Double(totalMarket) / 1000)
+        
+        infoPriceButton.isHidden = true
+    }
+    
+    private func updateVolumeLabel() {
+        if let totalVolumeString = viewModel.cryptoData?.data?.stats?.total24HVolume,
+           let totalVolumeLabel = Double(totalVolumeString) {
+            statsLabel.text = totalVolumeLabel.formattedPrice()!
+        } else {
+            statsLabel.text = "24h Volume not available"
         }
-        viewModel.fetchData()
+        totalInfoLabel.text = "Total 24h Volume"
+        infoPriceButton.isHidden = false
+        infoPriceButton.titleLabel?.text = "₺"
+        infoPriceButton.titleLabel?.font = UIFont.latoRegular(ofSize: 17)
     }
     
     private func updateMarketCapLabel() {
         if let totalMarketCapString = viewModel.cryptoData?.data?.stats?.totalMarketCap,
            let totalMarketCap = Double(totalMarketCapString) {
-            marketCapLabel.text = totalMarketCap.formattedPrice()!
+            statsLabel.text = totalMarketCap.formattedPrice()!
         } else {
-            marketCapLabel.text = "Market Cap not available"
+            statsLabel.text = "Market Cap not available"
         }
-        
+        totalInfoLabel.text = "Total Market Cap"
+        infoPriceButton.isHidden = false
+        infoPriceButton.titleLabel?.text = "₺"
+        infoPriceButton.titleLabel?.font = UIFont.latoRegular(ofSize: 17)
     }
     
+    private func updateChangeLabel() {
+        let totalUpdate = viewModel.cryptoData?.data?.stats?.totalExchanges
+        
+        statsLabel.text = "\(totalUpdate ?? 0)"
+        
+        totalInfoLabel.text = "Total Exchanges"
+        infoPriceButton.isHidden = false
+        infoPriceButton.titleLabel?.text = "%"
+        infoPriceButton.titleLabel?.font = UIFont.latoRegular(ofSize: 17)
+    }
+    
+    @IBAction func priceButtonAction(_ sender: UIButton) {
+        viewModel.sortCoinsByPrice()
+        collectionView.reloadData()
+        
+        updatePriceLabel()
+        
+        priceButton.backgroundColor = UIColor.primaryPurple
+        volumeButton.backgroundColor = .clear
+        changeButton.backgroundColor = .clear
+        marketCapButton.backgroundColor = .clear
+    }
+    
+    @IBAction func timeButtonAction(_ sender: UIButton) {
+        viewModel.sortCoinsByVolume()
+        collectionView.reloadData()
+        
+        updateVolumeLabel()
+        
+        priceButton.backgroundColor = .clear
+        volumeButton.backgroundColor = UIColor.primaryPurple
+        marketCapButton.backgroundColor = .clear
+        changeButton.backgroundColor = .clear
+    }
+    
+    @IBAction func marketCapButtonAction(_ sender: UIButton) {
+        viewModel.sortCoinsByMarketCap()
+        collectionView.reloadData()
+        
+        updateMarketCapLabel()
+        
+        priceButton.backgroundColor = .clear
+        volumeButton.backgroundColor = .clear
+        marketCapButton.backgroundColor = UIColor.primaryPurple
+        changeButton.backgroundColor = .clear
+    }
+    
+    @IBAction func changeButtonAction(_ sender: UIButton) {
+        viewModel.sortCoinsByChange()
+        collectionView.reloadData()
+        
+        updateChangeLabel()
+        
+        priceButton.backgroundColor = .clear
+        volumeButton.backgroundColor = .clear
+        marketCapButton.backgroundColor = .clear
+        changeButton.backgroundColor = UIColor.primaryPurple
+    }
+
     private func setLayerStyles() {
-        assetsLabel.backgroundColor = UIColor.primaryPurple
-        assetsLabel.layer.cornerRadius = 6
+        priceButton.backgroundColor = UIColor.primaryPurple
+        priceButton.layer.borderColor = UIColor.primaryPurple.cgColor
+        priceButton.layer.borderWidth = 0.5
+        priceButton.layer.cornerRadius = 6
         
-        hoursLabel.layer.borderColor = UIColor.primaryPurple.cgColor
-        hoursLabel.layer.borderWidth = 0.5
-        hoursLabel.layer.cornerRadius = 6
+        volumeButton.layer.borderColor = UIColor.primaryPurple.cgColor
+        volumeButton.layer.borderWidth = 0.5
+        volumeButton.layer.cornerRadius = 6
         
-        tradedLabel.layer.borderColor = UIColor.primaryPurple.cgColor
-        tradedLabel.layer.borderWidth = 0.5
-        tradedLabel.layer.cornerRadius = 6
+        marketCapButton.layer.borderColor = UIColor.primaryPurple.cgColor
+        marketCapButton.layer.borderWidth = 0.5
+        marketCapButton.layer.cornerRadius = 6
         
-        gainedLabel.layer.borderColor = UIColor.primaryPurple.cgColor
-        gainedLabel.layer.borderWidth = 0.5
-        gainedLabel.layer.cornerRadius = 6
+        changeButton.layer.borderColor = UIColor.primaryPurple.cgColor
+        changeButton.layer.borderWidth = 0.5
+        changeButton.layer.cornerRadius = 6
     }
     
 }

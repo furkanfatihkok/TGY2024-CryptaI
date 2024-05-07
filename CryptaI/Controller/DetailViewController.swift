@@ -10,6 +10,7 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var customView: CustomCardCell!
+    @IBOutlet weak var lineChartView: UIView!
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var textField: UITextField!
@@ -52,7 +53,7 @@ class DetailViewController: UIViewController {
 extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 90)
+        return CGSize(width: view.frame.width, height: 135)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

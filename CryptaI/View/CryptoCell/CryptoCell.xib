@@ -22,10 +22,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CryptoCell" customModule="CryptaI" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="366" height="60"/>
+            <rect key="frame" x="0.0" y="0.0" width="362" height="60"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="366" height="60"/>
+                <rect key="frame" x="0.0" y="0.0" width="362" height="60"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXB-Wq-Uop">
@@ -96,7 +96,7 @@
                 <constraint firstItem="UXB-Wq-Uop" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pMM-b2-HvH"/>
                 <constraint firstItem="UXB-Wq-Uop" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xUC-2A-VAF"/>
             </constraints>
-            <size key="customSize" width="366" height="60"/>
+            <size key="customSize" width="362" height="60"/>
             <connections>
                 <outlet property="coinImage" destination="AnZ-ir-mqd" id="6XF-wH-rdh"/>
                 <outlet property="nameLabel" destination="Uup-2Z-OAf" id="7qg-sD-36a"/>
@@ -104,7 +104,7 @@
                 <outlet property="priceLabel" destination="AYe-Ti-rYV" id="RLS-fC-L9r"/>
                 <outlet property="titleLabel" destination="b3D-tS-SUH" id="ZXq-Kg-IYx"/>
             </connections>
-            <point key="canvasLocation" x="-461.06870229007632" y="-43.661971830985919"/>
+            <point key="canvasLocation" x="-832.06106870229007" y="-25.35211267605634"/>
         </collectionViewCell>
     </objects>
 </document>

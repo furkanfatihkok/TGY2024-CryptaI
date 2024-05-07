@@ -8,6 +8,7 @@
 import Foundation
 
 class MockData {
+    
     static let bitcoin: Coin = {
         
         return Coin.init(
