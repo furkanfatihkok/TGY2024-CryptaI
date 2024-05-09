@@ -20,9 +20,7 @@ class CryptoCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-    
     
     func configure(with coin: Coin) {
         
@@ -50,7 +48,7 @@ class CryptoCell: UICollectionViewCell {
         guard var urlString = coin.iconUrl else { return }
         
         if urlString.contains("svg") {
-            urlString = urlString.replacingOccurrences(of: "svg", with: "png")            
+            urlString = urlString.replacingOccurrences(of: "svg", with: "png")
         }
         let url = URL(string: urlString)
         self.coinImage.sd_setImage(with: url, placeholderImage: UIImage(systemName: "questionmark"), context: nil)

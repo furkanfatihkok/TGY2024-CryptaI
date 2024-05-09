@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import XIBView
 
 class CustomCardCell: UIView {
     
@@ -18,6 +19,8 @@ class CustomCardCell: UIView {
     @IBOutlet weak var coinPriceLabel: UILabel!
     @IBOutlet weak var coinPercentageLabel: UILabel!
     
+    @IBOutlet weak var percentageImage: UIImageView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureNibView()
@@ -26,19 +29,6 @@ class CustomCardCell: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         configureNibView()
-    }
-    
-    private func loadViewFromNib() -> UIView? {
-        let nibName = String(describing: Self.self)
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: nibName, bundle: bundle)
-        return nib.instantiate(withOwner: self).first as? UIView
-    }
-    
-    func configureNibView() {
-        guard let view = self.loadViewFromNib() else { return }
-        view.frame = self.bounds
-        self.addSubview(view)
     }
     
     func configure(with coin: Coin) {

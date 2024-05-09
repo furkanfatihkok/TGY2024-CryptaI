@@ -17,6 +17,15 @@
         "revision" : "f6afa0132961d593f07970d84e2d8b588c29ea04",
         "version" : "5.19.1"
       }
+    },
+    {
+      "identity" : "xibview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/furkanfatihkok/XIBView",
+      "state" : {
+        "branch" : "main",
+        "revision" : "68a153969fc0f06d52fdef3719687efbe2c5011d"
+      }
     }
   ],
   "version" : 2

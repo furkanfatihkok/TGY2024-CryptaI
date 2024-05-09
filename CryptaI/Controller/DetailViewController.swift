@@ -10,14 +10,16 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var customView: CustomCardCell!
-    @IBOutlet weak var lineChartView: UIView!
+//    @IBOutlet weak var lineChartView: LineChartView!
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var textField: UITextField!
     
     let viewModel = CryptoViewModel()
-    
     var selectedCoin: Coin?
+//    
+//    var sparklineData: [String] = []
+//    var sparkline: [Double] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,19 @@ class DetailViewController: UIViewController {
         customView.configure(with: selectedCoin ?? MockData.bitcoin)
         setupCollectionView()
         fetchData()
+        
+//        guard let selectedCoin = selectedCoin else { return }
+//        
+//        if let sparklineStrings = selectedCoin.sparkline {
+//            // Her string öğesini Double'a dönüştürüp sparklineData dizisine ekler
+//            for string in sparklineStrings {
+//                if let doubleValue = Double(string) {
+//                    sparkline.append(doubleValue)
+//                }
+//            }
+//        }
+//        lineChartView.sparkline = sparkline
+
     }
     
     private func setupCollectionView() {
@@ -40,7 +55,7 @@ class DetailViewController: UIViewController {
         }
     }
     @IBAction func searchButton(_ sender: UIButton) {
-        
+        textField.text = ""
     }
     
     @IBAction func backButton(_ sender: UIButton) {
@@ -53,7 +68,7 @@ class DetailViewController: UIViewController {
 extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 135)
+        return CGSize(width: view.frame.width, height: 100)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,8 +79,13 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionCell.identifier, for: indexPath) as?  CardCollectionCell else {
             fatalError("Unkown: CardCollectionCell")
         }
+        
         if let coin = viewModel.cryptoData?.data?.coins?[indexPath.item] {
             cell.configure(with: coin)
+        }
+        
+        if let filteredCoin = viewModel.filteredCoins?[indexPath.item] {
+            cell.configure(with: filteredCoin)
         }
         
         return cell
@@ -79,4 +99,29 @@ extension DetailViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.text = ""
     }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentText = textField.text ?? ""
+        
+        guard let stringRange = Range(range, in: currentText) else {
+            return false
+        }
+        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+        if updatedText.isEmpty || updatedText.count == 1 {
+            filterContentForSearchText(updatedText)
+        }
+        return true
+    }
+    
+    func filterContentForSearchText(_ searchText: String) {
+        if searchText.isEmpty {
+            viewModel.filteredCoins = viewModel.cryptoData?.data?.coins
+        } else {
+            viewModel.filteredCoins = viewModel.cryptoData?.data?.coins?.filter { coin in
+                return coin.name!.lowercased().contains(searchText.lowercased())
+            }
+        }
+        collectionView.reloadData()
+    }
+    
 }

@@ -14,6 +14,8 @@ class CryptoViewModel {
     
     var onDataUpdadate: (() -> Void)?
     
+    var filteredCoins: [Coin]?
+    
     func fetchData() {
         CryptoService.shared.fetchCryptoData { result in
             switch result {
