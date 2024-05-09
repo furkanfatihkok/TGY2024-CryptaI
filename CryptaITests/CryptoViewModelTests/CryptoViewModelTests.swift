@@ -6,30 +6,34 @@
 //
 
 import XCTest
+@testable import CryptaI
 
 final class CryptoViewModelTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    var viewModel: CryptoViewModel!
+    
+    override func setUp() {
+        super.setUp()
+        viewModel = CryptoViewModel()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        super.tearDown()
+        viewModel = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testSortCoinsByMarketCap() {
+        // Given
+        let coin1 = Coin(symbol: "BTC", name: "Bitcoin", iconUrl: "", marketCap: "100000000000", price: "50000", change: "1", rank: 1, sparkline: nil, lowVolume: false, coinrankingURL: "", the24HVolume: "5000000", btcPrice: "1")
+        
+        let coin2 = Coin(symbol: "ETH", name: "Ethereum", iconUrl: "", marketCap: "80000000000", price: "3000", change: "0.5", rank: 2, sparkline: nil, lowVolume: false, coinrankingURL: "", the24HVolume: "3000000", btcPrice: "0.06")
+        
+        let coin3 = Coin(symbol: "ADA", name: "Cardano", iconUrl: "", marketCap: "40000000000", price: "2", change: "-0.2", rank: 3, sparkline: nil, lowVolume: false, coinrankingURL: "", the24HVolume: "1000000", btcPrice: "0.00004")
+        
+        // When
+        viewModel.cryptoData = CryptoModel(data: DataClass(stats: nil, coins: [coin1, coin2, coin3]))
+        
+        // Then
+        XCTAssertEqual(viewModel.cryptoData?.data?.coins?[0].symbol, "BTC")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
