@@ -9,12 +9,11 @@
   <h1>CryptaI Project by Furkan Fatih Kök</h1>
 </div>
 
-
  ## Screenshots
 
 | Image 1                | Image 2                | Image 3                |
 |------------------------|------------------------|------------------------|
-| ![Onboarding Screen](https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/ff55ce65-6aaf-4bc5-b401-4b2f88bb773f)|![Coins Scren](https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/16e12789-a252-4fa8-bc24-1163738235f9)| ![Detail Screen](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Product%20Detail%20Empty.pngs) |
+| ![Onboarding Screen](https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/ff55ce65-6aaf-4bc5-b401-4b2f88bb773f)|![Coins Scren](https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/8db51886-6b8a-48f6-a0c8-fe1f2d2f9710)| ![Detail Screen](https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/e9eb7b00-c2b0-452f-a13d-7608adb7c751) |
 | Onboarding Screen    | Filtering Coins    | Coins Detail   |
 
 ## Tech Stack
@@ -89,18 +88,18 @@ Also, make sure that these dependencies are added in your project's target:
 3. Go to Coin Detail by tapping on the relevant coin.
 
 <p align="left">
-  <img src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/f47e7eae-fe0c-4224-af5c-3c1b052b56b1" alt="Coins Screen" width="200" height="400">
+  <img src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/20981c0c-7747-4c2d-8881-597813fb4e35" alt="Coins Screen" width="200" height="400">
 </p>
 
 ---
 
-### Coin Details 
+### Coin Detail
 
 1. Look at the chart for the coin.
 2. Check the coin status with the search action to look for other coins.
 
 <p align="left">
-  <img src="https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/ProductDesstailGIF.gif" alt="Coin Detail" width="200" height="400">
+  <img src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/063d80dd-8259-4a05-827d-203f50824664" alt="Coin Detail" width="200" height="400">
 </p>
 
 ---
