@@ -26,7 +26,7 @@
 
 ## Architecture
 
-![Architecture](https://www.spaceotechnologies.com/wp-content/uploads/2024/03/iOS-MVVM-Architecture-in-Swift.png
+![Architecture](https://www.spaceotechnologies.com/wp-content/uploads/2024/03/iOS-MVVM-Architecture-in-Swift.png)
 
 
 
@@ -79,7 +79,7 @@ Also, make sure that these dependencies are added in your project's target:
 ###  Onboarding Screen
 
 <p align="left">
-  <img src="https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/ListingGIF.gifss" alt="Listing" width="200" height="400">
+  <img src="https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/ListingGIF.gifss" alt="Onboarding Screen" width="200" height="400">
 </p>
 
 ###  Coins Screen
@@ -89,7 +89,7 @@ Also, make sure that these dependencies are added in your project's target:
 3. Go to Coin Detail by tapping on the relevant coin.
 
 <p align="left">
-  <img src="https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/ListingGIF.gissf" alt="Listing" width="200" height="400">
+  <img src="https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/ListingGIF.gissf" alt="Coins Screen" width="200" height="400">
 </p>
 
 ---
@@ -100,7 +100,7 @@ Also, make sure that these dependencies are added in your project's target:
 2. Check the coin status with the search action to look for other coins.
 
 <p align="left">
-  <img src="https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/ProductDesstailGIF.gif" alt="Listing" width="200" height="400">
+  <img src="https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/ProductDesstailGIF.gif" alt="Coin Detail" width="200" height="400">
 </p>
 
 ---
