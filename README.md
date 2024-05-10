@@ -14,7 +14,7 @@
 
 | Image 1                | Image 2                | Image 3                |
 |------------------------|------------------------|------------------------|
-| ![Onboarding Screen](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Listing%20Empty.pngs) | ![Coins Screen](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Listing%20with%20Products.pngs) | ![Detail Screen](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Product%20Detail%20Empty.pngs) |
+| ![Onboarding Screen](https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/ff55ce65-6aaf-4bc5-b401-4b2f88bb773f)|![Coins Scren](https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/16e12789-a252-4fa8-bc24-1163738235f9)| ![Detail Screen](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Product%20Detail%20Empty.pngs) |
 | Onboarding Screen    | Filtering Coins    | Coins Detail   |
 
 ## Tech Stack
@@ -79,7 +79,7 @@ Also, make sure that these dependencies are added in your project's target:
 ###  Onboarding Screen
 
 <p align="left">
-  <img src="https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/ListingGIF.gifss" alt="Onboarding Screen" width="200" height="400">
+  <img src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/8de9557b-9665-4cdd-851f-be2b3a6b6876" alt="Onboarding Screen" width="200" height="400">
 </p>
 
 ###  Coins Screen
@@ -89,7 +89,7 @@ Also, make sure that these dependencies are added in your project's target:
 3. Go to Coin Detail by tapping on the relevant coin.
 
 <p align="left">
-  <img src="https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/ListingGIF.gissf" alt="Coins Screen" width="200" height="400">
+  <img src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/f47e7eae-fe0c-4224-af5c-3c1b052b56b1" alt="Coins Screen" width="200" height="400">
 </p>
 
 ---
