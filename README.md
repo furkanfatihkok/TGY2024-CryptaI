@@ -1,7 +1,8 @@
 # CryptaI
 
 <p align="center">
-  <img src="<img width="150" height= "150" alt="Screenshot 2024-05-04 at 22 59 25" src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/1b0d5a20-8c8f-4522-b41b-21e096e065a3">
+  <img src="<<img width="146" alt="Screenshot 2024-05-04 at 22 59 25" src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/9cde3f5d-fd02-4097-85d1-cd89801049d9">
+>
 </p>
 
 <div align="center">
