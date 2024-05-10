@@ -14,7 +14,7 @@
 
 | Image 1                | Image 2                | Image 3                |
 |------------------------|------------------------|------------------------|
-| ![Listing1](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Listing%20Empty.pngs) | ![Listing2](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Listing%20with%20Products.pngs) | ![Detail1](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Product%20Detail%20Empty.pngs) |
+| ![Onboarding Screen](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Listing%20Empty.pngs) | ![Coins Screen](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Listing%20with%20Products.pngs) | ![Detail Screen](https://github.com/lochmidth/GetirFinalProject/blob/main/Screenshots/Product%20Detail%20Empty.pngs) |
 | Onboarding Screen    | Filtering Coins    | Coins Detail   |
 
 ## Tech Stack
