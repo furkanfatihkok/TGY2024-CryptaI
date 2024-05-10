@@ -26,7 +26,7 @@
 
 ## Architecture
 
-![Architecture](https://www.spaceotechnologies.com/wp-content/uploads/2024/03/iOS-MVVM-Architecture-in-Swift.png =300x)
+![Architecture](https://www.spaceotechnologies.com/wp-content/uploads/2024/03/iOS-MVVM-Architecture-in-Swift.png
 
 
 
