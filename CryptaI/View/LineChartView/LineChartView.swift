@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIKit
-
 class LineChartView: UIView {
     
     var sparkline: [Double]? {
