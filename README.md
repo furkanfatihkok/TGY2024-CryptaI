@@ -45,7 +45,7 @@ Also, make sure that these dependencies are added in your project's target:
 
 - [Alamofire](https://github.com/Alamofire/Alamofire): Alamofire's compact syntax and extensive feature set allow requests with powerful features like automatic retry to be written in just a few lines of code.
 - [SDWebImage](https://github.com/SDWebImage/SDWebImage): SDWebImage is a popular asynchronous image download and caching library for iOS and macOS apps. This library prevents thread congestion and ensures a smooth user experience when downloading and caching your images from the internet.
-- [XIBImage](https://github.com/furkanfatihkok/XIBView): My XIBView package is a package that contains mandatory XIB methods when we create a custom view.
+- [XIBView](https://github.com/furkanfatihkok/XIBView): My XIBView package is a package that contains mandatory XIB methods when we create a custom view.
 
 
 ### Installation
