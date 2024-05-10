@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="<<img width="146" alt="Screenshot 2024-05-04 at 22 59 25" src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/9cde3f5d-fd02-4097-85d1-cd89801049d9">
->
 </p>
 
 <div align="center">
