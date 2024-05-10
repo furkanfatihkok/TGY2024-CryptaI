@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="igg-Xn-Yvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="igg-Xn-Yvc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -196,15 +196,14 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4k-beautiful-colorful-abstract-wallpaper-photo" translatesAutoresizingMaskIntoConstraints="NO" id="8v3-40-ZGV">
-                                <rect key="frame" x="345" y="45.333333333333343" width="40" height="40"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8v3-40-ZGV">
+                                <rect key="frame" x="355" y="51.666666666666671" width="30" height="27.333333333333329"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="purplee"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="Jdn-fe-ip6"/>
-                                    <constraint firstAttribute="height" constant="40" id="grU-hO-v77"/>
+                                    <constraint firstAttribute="width" constant="30" id="Jdn-fe-ip6"/>
+                                    <constraint firstAttribute="height" constant="30" id="grU-hO-v77"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="24"/>
-                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj0-Rl-b1s">
                                 <rect key="frame" x="145.33333333333334" y="145.33333333333334" width="37.333333333333343" height="28.666666666666657"/>
@@ -300,7 +299,7 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dj2-yY-6fK">
-                                <rect key="frame" x="16" y="598" width="361" height="222"/>
+                                <rect key="frame" x="16" y="598" width="361" height="139"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="npN-O8-Et6">
                                     <size key="itemSize" width="128" height="128"/>
@@ -382,6 +381,7 @@
                     <connections>
                         <outlet property="collectionView" destination="dj2-yY-6fK" id="5DM-sb-dMh"/>
                         <outlet property="customView" destination="NSd-CA-rJ5" id="ETY-px-b7q"/>
+                        <outlet property="lineChartView" destination="mwr-gh-D9x" id="VXc-id-zYm"/>
                         <outlet property="textField" destination="HgM-1L-UVX" id="Y7B-c7-ciN"/>
                     </connections>
                 </viewController>
@@ -515,10 +515,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mhh-im-02o"/>
+        <segue reference="Dnp-c3-Nmf"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="4k-beautiful-colorful-abstract-wallpaper-photo" width="711" height="400"/>
         <image name="arrow.left.arrow.right" catalog="system" width="120" height="128"/>
         <image name="chart.line.uptrend.xyaxis.circle.fill" catalog="system" width="128" height="123"/>
         <image name="chart.pie.fill" catalog="system" width="128" height="123"/>
@@ -528,6 +527,7 @@
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <image name="logo" width="102" height="86"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <namedColor name="background">
             <color red="0.078000001609325409" green="0.090000003576278687" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

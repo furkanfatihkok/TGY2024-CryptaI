@@ -181,7 +181,7 @@
 		023A1F352BE2C8D600B0FF29 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				023ADD8B2BECDC88008E8ED3 /* LineChartCell */,
+				023ADD8B2BECDC88008E8ED3 /* LineChartView */,
 				0224EA9A2BE83D1800E1864E /* CryptoCell */,
 				0224EA9C2BE83D4600E1864E /* CustomCardCell */,
 				025575462BE855E2002000D4 /* CardCollectionCell */,
@@ -189,12 +189,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		023ADD8B2BECDC88008E8ED3 /* LineChartCell */ = {
+		023ADD8B2BECDC88008E8ED3 /* LineChartView */ = {
 			isa = PBXGroup;
 			children = (
 				023ADD8E2BECDCAC008E8ED3 /* LineChartView.swift */,
 			);
-			path = LineChartCell;
+			path = LineChartView;
 			sourceTree = "<group>";
 		};
 		0254F24F2BE581EE009E8133 /* Fonts */ = {

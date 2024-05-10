@@ -10,16 +10,13 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var customView: CustomCardCell!
-//    @IBOutlet weak var lineChartView: LineChartView!
+    @IBOutlet weak var lineChartView: LineChartView!
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var textField: UITextField!
     
     let viewModel = CryptoViewModel()
     var selectedCoin: Coin?
-//    
-//    var sparklineData: [String] = []
-//    var sparkline: [Double] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,18 +27,15 @@ class DetailViewController: UIViewController {
         setupCollectionView()
         fetchData()
         
-//        guard let selectedCoin = selectedCoin else { return }
-//        
-//        if let sparklineStrings = selectedCoin.sparkline {
-//            // Her string öğesini Double'a dönüştürüp sparklineData dizisine ekler
-//            for string in sparklineStrings {
-//                if let doubleValue = Double(string) {
-//                    sparkline.append(doubleValue)
-//                }
-//            }
-//        }
-//        lineChartView.sparkline = sparkline
-
+        if let selectedCoin = selectedCoin, let sparklineStrings = selectedCoin.sparkline {
+            var sparklineData: [Double] = []
+            for string in sparklineStrings {
+                if let doubleValue = Double(string) {
+                    sparklineData.append(doubleValue)
+                }
+            }
+            lineChartView.sparkline = sparklineData
+        }
     }
     
     private func setupCollectionView() {
@@ -63,7 +57,7 @@ class DetailViewController: UIViewController {
     }
 }
 
-// MARK: - CollectionView Protocol
+// MARK: - Collection View Delegate&DataSource
 
 extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     

@@ -33,6 +33,8 @@ class HomeViewController: UIViewController {
         setupCollectionView()
         fetchDataAndUpdateUI()
         setLayerStyles()
+        
+        tabBarController?.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -203,6 +205,8 @@ class HomeViewController: UIViewController {
     
 }
 
+// MARK: - Collection View Delegate&DataSource
+
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -228,5 +232,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
     }
     
+}
+
+// MARK: - Tab Bar Delegate
+
+extension HomeViewController: UITabBarControllerDelegate {
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        return false
+    }
 }
 
