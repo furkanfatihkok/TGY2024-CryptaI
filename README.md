@@ -9,6 +9,19 @@
   <h1>CryptaI Project by Furkan Fatih Kök</h1>
 </div>
 
+## Table of Contents
+  - [Screenshots](#screenshots)
+  - [Tech Stack](#tech-stack)
+  - [Architecture](#architecture)
+  - [Unit Tests](#unit-tests)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [Coins Screen](#coins-screen)
+  - [Coin Detail](#coin-detail)
+- [Known Issues](#known-issues)
+
  ## Screenshots
 
 | Image 1                | Image 2                | Image 3                |
@@ -75,12 +88,6 @@ Also, make sure that these dependencies are added in your project's target:
 
 ## Usage
 
-###  Onboarding Screen
-
-<p align="left">
-  <img src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/8de9557b-9665-4cdd-851f-be2b3a6b6876" alt="Onboarding Screen" width="200" height="400">
-</p>
-
 ###  Coins Screen
 
 1. Open the app on your simulator or device.
@@ -103,3 +110,5 @@ Also, make sure that these dependencies are added in your project's target:
 </p>
 
 ---
+### Known Issues
+The filtering process does not work adequately for the coins I want to search.
