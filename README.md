@@ -1,8 +1,9 @@
 # CryptaI
 
 <p align="center">
-  <img src="<img width="146" alt="CryptaI-Icon" src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/5bab47e2-2fa5-4e29-a371-86ab3b465766">
+  <img width="146" alt="CryptaI-Icon" src="https://github.com/furkanfatihkok/TGY2024-CryptaI/assets/113316242/5bab47e2-2fa5-4e29-a371-86ab3b465766">
 </p>
+
 
 <div align="center">
   <h1>CryptaI Project by Furkan Fatih Kök</h1>
